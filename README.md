@@ -20,7 +20,9 @@ A variety of regression models were tried, inluding Linear Regression, Random Fo
 
 ## Target and Features
 
-  Many different production metrics were created and tested in modeling. These included the average, cumulative, and peak production over various time frames. These time frames included the most recent two, three, and five years of production. 
+  Features included various geologic, drilling, and completion data for each well. Categorical variables were converted to dummies using Pandas and then parsed down using Principal Component Analysis.
+  
+  Many different production metrics were created and used as targets in modeling. These included the average, cumulative, and peak production over various time frames. These time frames included the most recent two, three, and five years of production. 
 
 ## References
 
