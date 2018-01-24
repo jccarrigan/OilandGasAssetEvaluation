@@ -4,7 +4,7 @@ Due to the sensitive nature of the data used in this project, many aspects of th
 
 
 
-# Using Completion, Drilling, and Basic Reservoir Data to Predict Well Production
+# Predicting Well Production Using Completion, Drilling, and Basic Reservoir Data
 
 The dataset was 13000 wells and 14 different files containing various geologic, drilling, and completion data, which is not made available.  The final model used is the Yandex algorithm CatBoostRegressor. 
 
