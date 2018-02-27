@@ -66,10 +66,9 @@ A variety of regression models were tried, inluding Linear Regression, Random Fo
 
 * Tech Stack
    * Python
-   * Ipython
-   * PRAW
    * Numpy
    * Pandas
    * Sci-Kit Learn
-   * NLTK
+   * Catboost
+   * Seaborn
    * Matplotlib
