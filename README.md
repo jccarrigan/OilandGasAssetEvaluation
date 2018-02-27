@@ -10,7 +10,7 @@ Can oil production metrics be predicted using basic drilling, completion, and ge
 1. [Introduction](#introduction)
 2. [Data](#data)
 3. [Production Metric](#production-metric)
-    * [Metric Determination](#inital-creation)
+    * [Metric Determination](#metric-determination)
     * [Expanded Utility](#expanded-utility)
 4. [Predictive Modeling](#predictive-modeling)
     * [Model Selection](#model-selection)
@@ -62,7 +62,7 @@ A variety of regression models were tried, inluding Linear Regression, Random Fo
 
 ## References
 
-  * [Production Performance Metrics][http://www.verdazo.com/blog/what-production-performance-measure-should-i-use/]
+  * [Production Performance Metrics](http://www.verdazo.com/blog/what-production-performance-measure-should-i-use/)
 
 * Tech Stack
    * Python
