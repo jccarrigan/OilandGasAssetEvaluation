@@ -21,7 +21,7 @@ Can oil production metrics be predicted using basic drilling, completion, and ge
 
 
 
-The dataset included 13000 wells and 14 different files containing various geologic, drilling, and completion data, which is not made available.  The final model used is the Yandex algorithm CatBoostRegressor. 
+
 
 ## Introduction
 
@@ -30,6 +30,8 @@ The dataset included 13000 wells and 14 different files containing various geolo
 ---
 
 ## Data
+
+The dataset included 13000 wells and 14 different files containing various geologic, drilling, and completion data, which is not made available.  
 
 **Target and Features**
 
@@ -53,10 +55,6 @@ Three different metrics used to describe production over time: average, cumulati
 ### Model Selection
 
 A variety of regression models were tried, inluding Linear Regression, Random Forest, and multiple Gradient-Boosted models. Models were scored based on root mean-squared error. The final model selected was the Yandex algorithm CatBoosterRegressor. Once the model was chosen the hyperparameters were optimized using a grid search. 
-
-
-
-# Test note
 
 ### Model Evaluation
 
