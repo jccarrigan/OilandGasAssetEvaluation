@@ -1,4 +1,4 @@
-# Predicting Well Production Information
+# Predicting Well Production
 
 John Carrigan
 
