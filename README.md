@@ -25,12 +25,12 @@ Can oil production metrics be predicted using basic drilling, completion, and ge
 
 ## Introduction
 
- The company in question is looking to purchase assets in an undisclosed location.To inform their investment an evaluation of the assets in question must be conducted. Forecasting production plays a large role in estimating an asset’s profitability. Traditionally this is done through an engineering approach that can be data, time,and labor intensive. Oil production is influenced by a variety of factors, from the inherent reservoir characteristics, to the specific method of drilling and completing each well. Acquiring the data to perform this analysis can also be prohibitively expensive.The objective of this project is to determine if this process can be replicated in a more efficient and less time and data intensive manner.
+ An undisclosed company is looking to purchase assets in an undisclosed location. To inform their investment an evaluation of the assets in question must be conducted. Forecasting production plays a large role in estimating an asset’s profitability. Traditionally this is done through an engineering approach that can be data, time,and labor intensive. Oil production is influenced by a variety of factors, from the inherent reservoir characteristics, to the specific method of drilling and completing each well. Acquiring the data to perform this analysis can also be prohibitively expensive.The objective of this project is to determine if this process can be replicated in a more efficient and less time and data intensive manner.
  
  ### Objectives
  
-   *Create a model using basic drilling, completion, and geologic data to predict general oil and gas production
-   *Determine which variables were most predictive of oil production volumes. 
+   * Create a model using basic drilling, completion, and geologic data to predict general oil and gas production
+   * Determine which variables were most predictive of oil production volumes. 
 
 ---
 
