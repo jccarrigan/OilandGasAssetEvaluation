@@ -95,8 +95,8 @@ Below details the RMSE and R-squared values for models over different time perio
 
 Distribution comparisons between the actual production metrics and predicted values are provided below. While these models were unable to fully predict the production information in question, they did capture the general nature of the production information.
 
-![4yearAverage](img src=Plots/4Year/DistributionComparisonAverage.png){:height="100%" width="100%"}
-![4yearCorrelation](Plots/4Year/CorrelationAverage.png){:height="100%" width="100%"}
+![4yearAverage](Plots/4Year/DistributionComparisonAverage.png){:height="75%" width="75%"}
+![4yearCorrelation](Plots/4Year/CorrelationAverage.png){:height="75%" width="75%"}
 
 ## Conclusions
 
