@@ -81,17 +81,21 @@ A variety of regression models were attempted for each metric, including Linear 
 
 Below details the RMSE and R-squared values for models over different time periods. With relatively high error and low R-Squared values, the models were not able to precisely model the production metrics in question. 
 
-r2 and rmse plots
+![r2](Plots/r2.png)
+
+![RMSE])Plots/rmse.png)
 
 Distribution comparisons between the actual production metrics and predicted values are provided below. As one can see,  while these models were unable to fully predict the production information in question, they did capture the general nature of the production information.
 
-A few distribution plots 
+![4yearAverage](Plots/4Year/DistributionComparisonAverage.png)
+
+![4yearCorrelation](Plots/4Year/CorrelationAverage.png)
 
 ## Conclusions
 
 Many of the models also saw similarities in their feature importances. Below details the top 10 features for the average production over the most recent five years. 
 
-feature importance plot
+![4yearFeatures](Plots/4Year/feature_importanceAverage.png
 
 Given the relatively low accuracy of the models, additional work is necessary for these models to supplant traditional engineering techniques to evaluate a particular asset. This approach may be useful in circumstances where time or data is limited.
 
