@@ -93,7 +93,7 @@ Distribution comparisons between the actual production metrics and predicted val
 
 Many of the models also saw similarities in their feature importances. Below details the top 10 features for the average production over the most recent five years. 
 
-![4yearFeatures](Plots/4Year/feature_importanceAverage.png
+![4yearFeatures](Plots/4Year/feature_importanceAverage.png)
 
 Given the relatively low accuracy of the models, additional work is necessary for these models to supplant traditional engineering techniques to evaluate a particular asset. This approach may be useful in circumstances where time or data is limited.
 
