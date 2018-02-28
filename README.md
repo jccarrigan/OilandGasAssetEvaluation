@@ -52,10 +52,10 @@ At this point, multiple approaches were taken to determine the optimal feature m
  In simple terms, Principal Component Analysis or PCA is used to reduce the dimensionality of correlated variables into a lower dimensional space. PCA finds the directions of maximum variance in high-dimensional data and projects it onto a smaller dimensional subspace while retaining most of the information. This can be beneficial for improved model performance and data visualization. Below describes in detail how to perform PCA.
   [References](#references)
  
- ![PCA Steps]([Plots/pcasteps.png)
+ ![PCA Steps](Plots/pcasteps.png)
  [References](#references)
  
- ![PCA]([Plots/pca.png)
+ ![PCA](Plots/pca.png)
  [References](#references)
 
 ## Production Metric
