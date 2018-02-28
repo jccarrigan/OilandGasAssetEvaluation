@@ -26,21 +26,30 @@ Can oil production metrics be predicted using basic drilling, completion, and ge
 ## Introduction
 
  The company in question is looking to purchase assets in an undisclosed location.To inform their investment an evaluation of the assets in question must be conducted. Forecasting production plays a large role in estimating an asset’s profitability. Traditionally this is done through an engineering approach that can be data, time,and labor intensive. Oil production is influenced by a variety of factors, from the inherent reservoir characteristics, to the specific method of drilling and completing each well. Acquiring the data to perform this analysis can also be prohibitively expensive.The objective of this project is to determine if this process can be replicated in a more efficient and less time and data intensive manner.
+ 
+ ### Objectives
+ 
+   *Create a model using basic drilling, completion, and geologic data to predict general oil and gas production
+   *Determine which variables were most predictive of oil production volumes. 
 
 ---
 
 ## Data
 
-The dataset included 13000 wells and 14 different files containing various geologic, drilling, and completion data, which is not made available.  
+The dataset included 13000 wells and 14 different files containing various geologic, drilling, and completion data, which is not made available.
 
-**Target and Features**
+### Methodology 
 
-  Features included various geologic, drilling, and completion data for each well. Categorical variables were converted to dummies using Pandas and then parsed down using Principal Component Analysis.
-  
-  Started with 14 different files, with information for ~13,000 unique wells and >150 unique features. Joined files together based upon API Number, parsed features down to ~40 features. Used PCA to reduce the dimensionality of dummy categorical variables to 20 components.
-Created multiple production metrics from Time Series data. Train variety of models to predict production metrics, grid search on most effective models. Evaluate feature importance for most effective model
-  
-  Many different production metrics were created and used as targets in modeling. These included the average, cumulative, and peak production over various time frames. These time frames included the most recent two, three, and five years of production. 
+The data first had to be joined together using Pandas on API Number, a unique number given to all wells drilled domestically. A non-nominal amount of variables were neglected during this process, with the information deemed irrelevant, or too sparse to be of use. When completed, the final feature matrix included ~50 numerical variables and ~20 categorical values. Much of the dataset possessed missing values, with the range of missing data amounting to 5-75% missing values. Due to the skewed nature of many of the variables, the median of each feature was used to replace missing values.
+
+At this point, multiple approaches were taken to determine the optimal feature matrix to train a model on. These include:
+   * Numerical values only
+   * Reducing dimensionality of categorical dummy variables using Principal Component Analysis (PCA)
+   * Using 10 most important features from previous models (more detail below)
+   
+ **Principal Component Analysis**
+ 
+ Give a brief technical explanation for how PCA works with graphs blah blah.  
 
 ## Production Metric
 
