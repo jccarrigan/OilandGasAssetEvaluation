@@ -82,13 +82,11 @@ A variety of regression models were attempted for each metric, including Linear 
 Below details the RMSE and R-squared values for models over different time periods. With relatively high error and low R-Squared values, the models were not able to precisely model the production metrics in question. 
 
 ![r2](Plots/r2.png)
-
-![RMSE])Plots/rmse.png)
+![RMSE](Plots/rmse.png)
 
 Distribution comparisons between the actual production metrics and predicted values are provided below. As one can see,  while these models were unable to fully predict the production information in question, they did capture the general nature of the production information.
 
 ![4yearAverage](Plots/4Year/DistributionComparisonAverage.png)
-
 ![4yearCorrelation](Plots/4Year/CorrelationAverage.png)
 
 ## Conclusions
