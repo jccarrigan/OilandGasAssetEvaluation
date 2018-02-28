@@ -90,8 +90,8 @@ Referring to the feature matrices mentioned above, models were trained on each s
 
 Below details the RMSE and R-squared values for models over different time periods. With relatively high error and low R-Squared values, the models were not able to precisely model the production metrics in question. 
 
-![r2](Plots/r2.png)
-![RMSE](Plots/rmse.png)
+![r2](Plots/r21.png)
+![RMSE](Plots/rmse1.png)
 
 Distribution comparisons between the actual production metrics and predicted values are provided below. While these models were unable to fully predict the production information in question, they did capture the general nature of the production information.
 
