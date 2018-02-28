@@ -49,7 +49,14 @@ At this point, multiple approaches were taken to determine the optimal feature m
    
  **Principal Component Analysis**
  
- Give a brief technical explanation for how PCA works with graphs blah blah.  
+ In simple terms, Principal Component Analysis or PCA is used to reduce the dimensionality of correlated variables into a lower dimensional space. PCA finds the directions of maximum variance in high-dimensional data and projects it onto a smaller dimensional subspace while retaining most of the information. This can be beneficial for improved model performance and data visualization. Below describes in detail how to perform PCA.
+  [References](#references)
+ 
+ ![PCA Steps]([Plots/pcasteps.png)
+ [References](#references)
+ 
+ ![PCA]([Plots/pca.png)
+ [References](#references)
 
 ## Production Metric
 
@@ -75,7 +82,9 @@ Three models were created for each time period in question: models to predict av
 
 ### Model Selection
 
-A variety of regression models were attempted for each metric, including Linear Regression with and without regularization, ensemble tree methods including Random Forest and Gradient-Boosted models, as well as a simple perceptron basic neural network. Models were scored based on root mean-squared error (RMSE) and R-squared values on the training set using k-fold cross validation. The final model selected was the Yandex algorithm CatBoosterRegressor. Hyperparameters were tuned using GridSearch. However, little benefit was accrued, and fine-tuning of each particular model was abandoned based upon effieciency and time restraints. 
+A variety of regression models were attempted for each metric, including Linear Regression with and without regularization, ensemble tree methods including Random Forest and Gradient-Boosted models, as well as a simple perceptron basic neural network. Models were scored based on root mean-squared error (RMSE) and R-squared values on the training set using k-fold cross validation. The final model selected was the Yandex algorithm CatBoosterRegressor. Hyperparameters were tuned using GridSearch. However, little benefit was accrued, and fine-tuning of each particular model was abandoned based upon effieciency and time restraints.
+
+Referring to the feature matrices mentioned above, models were trained on each specific feature matrix. The results from each model were comparable, with the feature matrix including PCA yielding the highest evaluation scores. Below details the results from the feature matrix including PCA.
 
 ### Model Evaluation
 
@@ -84,7 +93,7 @@ Below details the RMSE and R-squared values for models over different time perio
 ![r2](Plots/r2.png)
 ![RMSE](Plots/rmse.png)
 
-Distribution comparisons between the actual production metrics and predicted values are provided below. As one can see,  while these models were unable to fully predict the production information in question, they did capture the general nature of the production information.
+Distribution comparisons between the actual production metrics and predicted values are provided below. While these models were unable to fully predict the production information in question, they did capture the general nature of the production information.
 
 ![4yearAverage](Plots/4Year/DistributionComparisonAverage.png)
 ![4yearCorrelation](Plots/4Year/CorrelationAverage.png)
@@ -95,7 +104,9 @@ Many of the models also saw similarities in their feature importances. Below det
 
 ![4yearFeatures](Plots/4Year/feature_importanceAverage.png)
 
-Given the relatively low accuracy of the models, additional work is necessary for these models to supplant traditional engineering techniques to evaluate a particular asset. This approach may be useful in circumstances where time or data is limited.
+The results are mostly unsurprising. Material pumped during frac jobs and initial production volumens are shown to be correlated with eventual production. THe importance of location parameters is a bit more intriguing. Further investigation into these insights is required to describe the reasoning behind this finding.
+
+Moving forward, these models could be used to predict long term well performance for wells that have recently been drilled or only produced for a short time. Overall, given the high error numbers and the average r-squared values, additional work is necessary for these models to supplant traditional engineering techniques to evaluate a particular oil and gas asset. This approach may be useful in circumstances where time or data is limited. Acquiring more geologic data, time-series forecasting, and kernal smoothing are all additional actions that could improve the utility of this project.   
 
 ## Appendix
 
@@ -104,6 +115,7 @@ Include the rest of the plots here
 ## References
 
   * [Production Performance Metrics](http://www.verdazo.com/blog/what-production-performance-measure-should-i-use/)
+  * [Principal Component Analysis](http://sebastianraschka.com/Articles/2015_pca_in_3_steps.html#a-summary-of-the-pca-approach)
 
 * Tech Stack
    * Python
