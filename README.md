@@ -29,7 +29,7 @@ Can oil production metrics be predicted using basic drilling, completion, and ge
  
  ### Objectives
  
-   * Create a model using basic drilling, completion, and geologic data to predict general oil and gas production
+   * Create a model using basic drilling, completion, and geologic data to predict oil and gas production
    * Determine which variables were most predictive of oil production volumes. 
 
 ---
@@ -53,29 +53,51 @@ At this point, multiple approaches were taken to determine the optimal feature m
 
 ## Production Metric
 
-Three different metrics used to describe production over time: average, cumulative, and peak production. Wells must be drilled within the last 3 and 5 years respectively, have 2 and 4 years of production, and minimal shut in months
+Once a feature matrix was created, a target variable was then necessary for our model to learn to predict. With oil production data being time series in nature, one either must create a time series model or translate this time series data into a single target variable. While time series modeling is beyond the scope of this current project, it would be a constructive future pursuit. Three different metrics were ultimately used to describe production over time: average, cumulative, and peak production. The production information provided was in oil barrels per month.
 
-### Metric Determination
+Insert example graph of production from 50 wells 
+
+### Target Variable
+
+Once these metrics were decided upon, comparing wells over similar time periods was necessary for our particular metrics to accurately capture the production characteristics of a particular well. As can be seen above, oil wells inititally produce at a high volume, and decline gradually as time passes, typically at an exponential or hyperbolic rate. To compare wells like for like, I started first with a time period to analyze production over, in years. Since wells can be shut in for a period of time for a variety of reasons, only wells that produced on average more than three weeks per month were selected. Wells were then selected that had only produced for the time period desired. Then wells were selected that had produced this amount in the most recent n years desired, within one year, to ensure were comparing wells at the similar points in their production life. From this subset wells that had less than 25% no production months were included in metric calculation. The production data over our desired time period was averaged, summed, and the maximum was taken to create the metric to be used as our target variable.
+
+Maybe a graph that shows one production profile with average, cumulative, and peak written next to it
 
 ### Expanded Utility 
 
+Initially these metrics were only created to look at the most recent two-year and five-year production wells. The functionality of this method was then expanded to look at any particular length of time. This method can be seen in the feature_matrix.py file.  
+
 ## Predictive Modeling
+
+Once the feature matrix and target variables were in place, the two were merged once again based on API Number. A train-test split was  then performed on the data to prepare for model selection and evaluation.
+
+Three models were created for each time period in question: models to predict average, cumulative, and peak production over the specified time interval
 
 ### Model Selection
 
-A variety of regression models were tried, inluding Linear Regression, Random Forest, and multiple Gradient-Boosted models. Models were scored based on root mean-squared error. The final model selected was the Yandex algorithm CatBoosterRegressor. Once the model was chosen the hyperparameters were optimized using a grid search. 
+A variety of regression models were attempted for each metric, including Linear Regression with and without regularization, ensemble tree methods including Random Forest and Gradient-Boosted models, as well as a simple perceptron basic neural network. Models were scored based on root mean-squared error (RMSE) and R-squared values on the training set using k-fold cross validation. The final model selected was the Yandex algorithm CatBoosterRegressor. Hyperparameters were tuned using GridSearch. However, little benefit was accrued, and fine-tuning of each particular model was abandoned based upon effieciency and time restraints. 
 
 ### Model Evaluation
 
+Below details the RMSE and R-squared values for models over different time periods. With relatively high error and low R-Squared values, the models were not able to precisely model the production metrics in question. 
+
+r2 and rmse plots
+
+Distribution comparisons between the actual production metrics and predicted values are provided below. As one can see,  while these models were unable to fully predict the production information in question, they did capture the general nature of the production information.
+
+A few distribution plots 
+
 ## Conclusions
 
-Two key features for predicting future oil production: test volumes upon initial
-production and frac volumes. Given the relative accuracy of the models, more investigation is necessary for these models to supplant traditional engineering techniques to evaluate a particular asset. This model may be useful in circumstances where time or data is limited.
+Many of the models also saw similarities in their feature importances. Below details the top 10 features for the average production over the most recent five years. 
 
+feature importance plot
 
-
+Given the relatively low accuracy of the models, additional work is necessary for these models to supplant traditional engineering techniques to evaluate a particular asset. This approach may be useful in circumstances where time or data is limited.
 
 ## Appendix
+
+Include the rest of the plots here
 
 ## References
 
