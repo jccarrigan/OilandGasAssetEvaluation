@@ -95,14 +95,14 @@ Below details the RMSE and R-squared values for models over different time perio
 
 Distribution comparisons between the actual production metrics and predicted values are provided below. While these models were unable to fully predict the production information in question, they did capture the general nature of the production information.
 
-<img src="Plots/4Year/DistributionComparisonAverage.png" width="750" height="750"/>
-<img src="Plots/4Year/CorrelationAverage.png" width="750" height="750"/>
+![Distribution](Plots/4Year/DistributionComparisonAverage.png)
+![Correlation](Plots/4Year/CorrelationAverage.png)
 
 ## Conclusions
 
 Many of the models also saw similarities in their feature importances. Below details the top 10 features for the average production over the most recent five years. 
 
-<img src="Plots/4Year/feature_importanceAverage.png" width="750" height="750"/>
+![Features](Plots/4Year/feature_importanceAverage.png)
 
 The results are mostly unsurprising. Material pumped during frac jobs and initial production volumens are shown to be correlated with eventual production. The importance of location parameters is a bit more intriguing. Further investigation into these insights is required to describe the reasoning behind this finding.
 
