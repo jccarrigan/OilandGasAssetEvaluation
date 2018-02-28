@@ -55,7 +55,7 @@ At this point, multiple approaches were taken to determine the optimal feature m
 
 Once a feature matrix was created, a target variable was then necessary for our model to learn to predict. With oil production data being time series in nature, one either must create a time series model or translate this time series data into a single target variable. While time series modeling is beyond the scope of this current project, it would be a constructive future pursuit. Three different metrics were ultimately used to describe production over time: average, cumulative, and peak production. The production information provided was in oil barrels per month.
 
-Insert example graph of production from 50 wells 
+![production](Plots/production.png)
 
 ### Target Variable
 
