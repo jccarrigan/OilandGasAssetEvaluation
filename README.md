@@ -55,7 +55,7 @@ At this point, multiple approaches were taken to determine the optimal feature m
  [References](#references)
  
  ![PCA](Plots/pca.png) 
- **Fig. 1 - Visualiztion of dimensionality reduction of data from three dimensions to two**
+ **Fig. 1 - Visualization of dimensionality reduction of data from three dimensions to two**
  [References](#references)
 
 ## Production Metric
