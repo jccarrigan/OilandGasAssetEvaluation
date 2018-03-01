@@ -121,7 +121,7 @@ Moving forward, these models could be used to predict long term well performance
 
 ## Appendix
 
-Please refer to the Plots folder to view the results of the various models over different time periods. The folder includes model results for average, cumulative, and peak production over the most recent 2-10 year timeframe. 
+Please refer to the Plots folder to view the results of the various models over different time periods. The folder includes model results for average, cumulative, and peak production over the most recent 2-10 year timeframes. 
 
 Well counts for each model are also included.
 
