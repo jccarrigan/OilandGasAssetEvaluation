@@ -36,7 +36,7 @@ Can oil production metrics be predicted using basic drilling, completion, and ge
 
 ## Data
 
-The dataset included 13000 wells and 14 different files containing various geologic, drilling, and completion data, which is not made available.
+The dataset included 13,000 wells and 14 different files containing various geologic, drilling, and completion data, which is not made available.
 
 ### Methodology 
 
@@ -69,7 +69,9 @@ Fig. 1 - Production profiles for 50 wells from the dataset, normalized to initia
 
 Once these metrics were decided upon, comparing wells over similar time periods was necessary for our particular metrics to accurately capture the production characteristics of a particular well. As can be seen above, oil wells inititally produce at a high volume, and decline gradually as time passes, typically at an exponential or hyperbolic rate. To compare wells like for like, I started first with a time period to analyze production over, in years. Since wells can be shut in for a period of time for a variety of reasons, only wells that produced on average more than three weeks per month were selected. Wells were then selected that had only produced for the time period desired. Then wells were selected that had produced this amount in the most recent n years desired, within one year, to ensure were comparing wells at the similar points in their production life. From this subset wells that had less than 25% no production months were included in metric calculation. The production data over our desired time period was averaged, summed, and the maximum was taken to create the metric to be used as our target variable.
 
-Maybe a graph that shows one production profile with average, cumulative, and peak written next to it
+![profile](Plots/profile.png) ![example](Plots/example.png)
+
+Fig. 2 - Production profile and corresponding production metrics
 
 ### Expanded Utility 
 
@@ -114,6 +116,8 @@ Moving forward, these models could be used to predict long term well performance
 ## Appendix
 
 Please refer to the Plots folder to view the results of the various models over different time periods. The folder includes model results for average, cumulative, and peak production over the most recent 2-10 year timeframe. 
+
+Well counts for each model are also included.
 
 ## References
 
