@@ -115,9 +115,9 @@ Many of the models also saw similarities in their feature importances. Below det
 
 ![Features](Plots/4Year/feature_importanceAverage.png)
 
-The results are mostly unsurprising. Material pumped during frac jobs and initial production volumens are shown to be correlated with eventual production. The importance of location parameters is a bit more intriguing. Further investigation into these insights is required to describe the reasoning behind this finding.
+The results from this plot are mostly as expected. Geologic properties, material pumped during frac jobs, and initial production volumes are shown to be correlated with eventual production. The importance of location parameters is a bit more intriguing. Further investigation is required to describe the reasoning behind this finding.
 
-Moving forward, these models could be used to predict long term well performance for wells that have recently been drilled or only produced for a short time. Overall, given the high error numbers and the average r-squared values, additional work is necessary for these models to supplant traditional engineering techniques to evaluate a particular oil and gas asset. This approach may be useful in circumstances where time or data is limited. Acquiring more geologic data, time-series forecasting, and kernal smoothing are all additional actions that could improve the utility of this project.   
+Ideally, these models could be used to predict long term well performance for wells that have recently been drilled or only produced for a short time. Howevever, given the high error numbers and the average r-squared values, additional work is necessary for these models to supplant traditional engineering techniques to evaluate a particular oil and gas asset. This approach may be useful in circumstances where time or data is limited. Acquiring more geologic data, time-series forecasting, and kernal smoothing are all additional actions that could possibly improve the utility of this project.   
 
 ## Appendix
 
