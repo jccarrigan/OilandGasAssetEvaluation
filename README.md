@@ -111,7 +111,7 @@ The figure below illustrates the relative accuracy of predictions for the four y
 
 ## Conclusions
 
-Many of the models also saw similarities in their feature importances. Below details the top 10 features for the average production over the most recent five years. 
+Many of the models also saw similarities in their feature importances. Below details the top 10 features for the average production over the most recent four years. 
 
 ![Features](Plots/4Year/feature_importanceAverage.png)
 
