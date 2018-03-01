@@ -10,7 +10,7 @@ Can oil production metrics be predicted using basic drilling, completion, and ge
 1. [Introduction](#introduction)
 2. [Data](#data)
 3. [Production Metric](#production-metric)
-    * [Metric Determination](#metric-determination)
+    * [Target Variable](#target-variable)
     * [Expanded Utility](#expanded-utility)
 4. [Predictive Modeling](#predictive-modeling)
     * [Model Selection](#model-selection)
@@ -49,13 +49,12 @@ At this point, multiple approaches were taken to determine the optimal feature m
    
  **Principal Component Analysis**
  
- In simple terms, Principal Component Analysis or PCA is used to reduce the dimensionality of correlated variables into a lower dimensional space. PCA finds the directions of maximum variance in high-dimensional data and projects it onto a smaller dimensional subspace while retaining most of the information. This can be beneficial for improved model performance and data visualization. Below describes in detail how to perform PCA.
-  [References](#references)
- 
+ In simple terms, Principal Component Analysis or PCA is used to reduce the dimensionality of correlated variables into a lower dimensional space. PCA finds the directions of maximum variance in high-dimensional data and projects it onto a smaller dimensional subspace while retaining most of the information. This can be beneficial for improved model performance and data visualization. Below describes in detail how to perform PCA. [References](#references)
+  
  ![PCA Steps](Plots/pcasteps.png)
  [References](#references)
  
- ![PCA](Plots/pca.png)
+ ![PCA](Plots/pca.png) 
  [References](#references)
 
 ## Production Metric
@@ -63,6 +62,8 @@ At this point, multiple approaches were taken to determine the optimal feature m
 Once a feature matrix was created, a target variable was then necessary for our model to learn to predict. With oil production data being time series in nature, one either must create a time series model or translate this time series data into a single target variable. While time series modeling is beyond the scope of this current project, it would be a constructive future pursuit. Three different metrics were ultimately used to describe production over time: average, cumulative, and peak production. The production information provided was in oil barrels per month.
 
 ![production](Plots/production.png)
+
+Fig. 1 - Production profiles for 50 wells from the dataset, normalized to initial production data
 
 ### Target Variable
 
@@ -96,6 +97,8 @@ Below details the RMSE and R-squared values for models over different time perio
 Distribution comparisons between the actual production metrics and predicted values are provided below. While these models were unable to fully predict the production information in question, they did capture the general nature of the production information.
 
 ![Distribution](Plots/4Year/DistributionComparisonAverage.png)
+
+The figure below illustrates the relative accuracy of the model for four year average production. 
 ![Correlation](Plots/4Year/CorrelationAverage.png)
 
 ## Conclusions
@@ -110,7 +113,7 @@ Moving forward, these models could be used to predict long term well performance
 
 ## Appendix
 
-Include the rest of the plots here
+Please refer to the Plots folder to view the results of the various models over different time periods. The folder includes model results for average, cumulative, and peak production over the most recent 2-10 year timeframe. 
 
 ## References
 
