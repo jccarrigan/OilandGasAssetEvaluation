@@ -63,7 +63,7 @@ Once a feature matrix was created, a target variable was then necessary for our 
 
 ![production](Plots/production.png)
 
-Fig. 1 - Production profiles for 50 wells from the dataset, normalized to initial production data
+**Fig. 1 - Production profiles for 50 wells from the dataset, normalized to initial production data**
 
 ### Target Variable
 
@@ -71,7 +71,7 @@ Once these metrics were decided upon, comparing wells over similar time periods 
 
 ![profile](Plots/profile.png) ![example](Plots/example.png)
 
-Fig. 2 - Production profile and corresponding production metrics
+**Fig. 2 - Production profile and corresponding production metrics**
 
 ### Expanded Utility 
 
