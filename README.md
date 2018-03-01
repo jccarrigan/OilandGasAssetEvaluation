@@ -102,8 +102,11 @@ Distribution comparisons between the actual production metrics and predicted val
 ![Distribution2](Plots/4Year/DistributionComparisonCumulative.png)
 ![Distribution3](Plots/4Year/DistributionComparisonPeak.png)
 
-The figure below illustrates the relative accuracy of the model for four year average production. 
-![Correlation](Plots/4Year/CorrelationAverage.png)
+The figure below illustrates the relative accuracy of predictions for the four year production models.
+
+![Correlation1](Plots/4Year/CorrelationAverage.png)
+![Correlation2](Plots/4Year/CorrelationCumulative.png)
+![Correlation3](Plots/4Year/CorrelationPeak.png)
 
 ## Conclusions
 
