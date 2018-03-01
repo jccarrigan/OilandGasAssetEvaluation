@@ -55,6 +55,7 @@ At this point, multiple approaches were taken to determine the optimal feature m
  [References](#references)
  
  ![PCA](Plots/pca.png) 
+ **Fig. 1 - Visualiztion of dimensionality reduction of data from three dimensions to two**
  [References](#references)
 
 ## Production Metric
@@ -63,7 +64,7 @@ Once a feature matrix was created, a target variable was then necessary for our 
 
 ![production](Plots/production.png)
 
-**Fig. 1 - Production profiles for 50 wells from the dataset, normalized to initial production data**
+**Fig. 2 - Production profiles for 50 wells from the dataset, normalized to initial production data**
 
 ### Target Variable
 
@@ -71,7 +72,7 @@ Once these metrics were decided upon, comparing wells over similar time periods 
 
 ![profile](Plots/profile.png) ![example](Plots/example.png)
 
-**Fig. 2 - Production profile and corresponding production metrics**
+**Fig. 3 - Production profile and corresponding production metrics**
 
 ### Expanded Utility 
 
