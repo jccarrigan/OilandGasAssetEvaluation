@@ -51,10 +51,10 @@ At this point, multiple approaches were taken to determine the optimal feature m
  
  In simple terms, Principal Component Analysis or PCA is used to reduce the dimensionality of correlated variables into a lower dimensional space. PCA finds the directions of maximum variance in high-dimensional data and projects it onto a smaller dimensional subspace while retaining most of the information. This can be beneficial for improved model performance and data visualization. Below describes in detail how to perform PCA. [References](#references)
   
- ![PCA Steps](Plots/pcasteps.png)
+ ![PCA Steps](Images/pcasteps.png)
  [References](#references)
  
- ![PCA](Plots/pca.png) 
+ ![PCA](Images/pca.png) 
  **Fig. 1 - Visualization of dimensionality reduction of data from three dimensions to two**
  [References](#references)
 
@@ -70,7 +70,7 @@ Once a feature matrix was created, a target variable was then necessary for our 
 
 Once these metrics were decided upon, comparing wells over similar time periods was necessary for our particular metrics to accurately capture the production characteristics of a particular well. As can be seen above, oil wells inititally produce at a high volume, and decline gradually as time passes, typically at an exponential or hyperbolic rate. To compare wells like for like, I started first with a time period to analyze production over, in years. Since wells can be shut in for a period of time for a variety of reasons, only wells that produced on average more than three weeks per month were selected. Wells were then selected that had only produced for the time period desired. Then wells were selected that had produced this amount in the most recent n years desired, within one year, to ensure were comparing wells at the similar points in their production life. From this subset wells that had less than 25% no production months were included in metric calculation. The production data over our desired time period was averaged, summed, and the maximum was taken to create the metric to be used as our target variable.
 
-![profile](Plots/profile.png) ![example](Plots/example.png)
+![profile](Plots/profile.png) ![example](Images/example.png)
 
 **Fig. 3 - Production profile and corresponding production metrics**
 
