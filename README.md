@@ -1,7 +1,4 @@
 # Predicting Well Production
-
-John Carrigan
-
 --- 
 Can oil production metrics be predicted using basic drilling, completion, and geologic data?
 
